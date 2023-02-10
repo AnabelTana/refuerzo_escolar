@@ -1,0 +1,160 @@
+.portada{
+    background-image: url('https://img.freepik.com/vector-premium/coleccion-dibujos-animados-animales-felices-selva_29190-3188.jpg?w=2000');
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.portada:before {
+	content:'';
+	position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.6);
+}
+
+.portada h1{
+    position: absolute;
+    top: 40vh;
+    left: 35vw;
+}
+
+.portada img{
+    position: absolute;
+    max-width: 50%;
+    top: 40vh;
+    left: 25vw;
+}
+
+
+.logo{
+    width: 5rem;
+}
+
+
+.animacion-saltar{
+    animation-name: saltar;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes saltar {
+    0%{
+        transform: translateY(0%);
+    }
+    50%{
+        transform: translateY(-10%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+
+}
+/*sistema solar estilos*/
+body.solar{
+    background-image: url('../src/Planetas/espacio.jpg');
+}
+
+.planeta{
+    display: block;
+    justify-content: center;
+    height: 40rem;
+
+}
+
+.padre-planeta{
+    display: flex;
+    justify-content: center;
+}
+
+.animacion-rotar{
+    animation-name: rotar;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes rotar {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+
+}
+
+
+/* estilos para ingles */
+
+.tarjeta-select:hover{
+    transform: scale(1.1);
+    transition: all 1s;
+}
+
+
+/* estilos cuerpo humano
+ */
+
+ /* body.cuerpo{
+    background-image: url('https://thumbs.dreamstime.com/b/formas-libres-abstractas-decorativas-fondo-repetitivo-blanco-ilustraci%C3%B3n-simple-patr%C3%B3n-transparente-vectorial-pintura-textil-167665485.jpg');
+} */
+
+ .animacion-saltar-suave{
+    animation-name: saltar;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes saltar {
+    0%{
+        transform: translateY(0%);
+    }
+    50%{
+        transform: translateY(-5%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+
+}
+
+footer {
+
+    position: fixed;
+    bottom: 5%;
+    width: 100%;
+    height: 40px;
+    color: white;
+}
+
+
+
+/* ETILOS PARA EJERCIOS */
+
+.caja{
+    height: 10rem;
+    width: 10rem;
+    border: 1px solid black;
+}
+
+/* EJERCICIO PLANETAS ESTILOS*/
+
+.planeta-caja{
+    display: block;
+    max-width: 15rem;
+    width: 15rem;
+    height: 15rem;
+    max-height: 15rem;
+}
+
+.correcto{
+    color: greenyellow;
+}
+.error{
+color: red;
+}
